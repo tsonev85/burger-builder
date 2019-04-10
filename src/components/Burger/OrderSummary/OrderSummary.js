@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Aux from '../../../hoc/Auxilary'
+import Aux from '../../../hoc/Auxilary';
+import Button from '../../UI/Button/Button';
 
 
 class OrderSumamry extends Component {
@@ -18,9 +19,10 @@ class OrderSumamry extends Component {
                 <ul>
                     {ingredientSummary}
                 </ul>
+                <p><strong>Total Price: {this.props.price}</strong></p>
                 <p>Continue to checkout?</p>
-              <button>CONTINUE</button>
-              <button>CANCEL</button>
+              <Button btnType='Success' clicked={this.props.purchaseContinued}>CONTINUE</Button>
+              <Button btnType='Danger' clicked={this.props.purchaseCanceled}>CANCEL</Button>
             </Aux>
         );
     };

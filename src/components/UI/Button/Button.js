@@ -8,8 +8,8 @@ class Button extends Component{
         <button
           onClick={this.props.clicked}
           className={[
-            classes.Button, classes[this.props.btnType].join(' ')
-          ]}
+            classes.Button, classes[this.props.btnType]
+          ].join(' ')}
         >{this.props.children}</button>
       </div>
     );
