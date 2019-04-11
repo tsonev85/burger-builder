@@ -3,7 +3,7 @@ import classes from './SideDrawer.css';
 import Logo from '../../Logo/Logo';
 import NavItems from '../NavigationItems/NavItems';
 import BackDrop from '../../UI/BackDrop/BackDrop';
-import Aux from '../../../hoc/Auxilary';
+import Aux from '../../../hoc/Auxilary/Auxilary';
 
 
 class SideDrawer extends Component {
