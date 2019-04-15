@@ -21,6 +21,7 @@ class BuildControls extends Component {
             label={ctrl.label}
             ingredientAdded={() => this.props.ingredientAdded(ctrl.type)}
             ingredientRemoved={() => this.props.ingredientRemoved(ctrl.type)}
+            disabled={this.props.disabled[ctrl.type]}
           />
         ))}
         <button
